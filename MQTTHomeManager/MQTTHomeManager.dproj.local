@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2021/06/08 17:46:52.000.036,=C:\POC\MQTTHomeManager\Unit1.pas</Transaction>
+    <Transaction>2021/06/08 17:47:10.000.717,C:\POC\MQTTHomeManager\Unit1.pas=</Transaction>
+    <Transaction>2021/06/08 17:47:23.000.684,=C:\POC\MQTTHomeManager\Unit2.pas</Transaction>
+    <Transaction>2021/06/08 17:47:35.000.259,C:\POC\MQTTHomeManager\Unit1.fmx=C:\POC\MQTTHomeManager\Unit2.fmx</Transaction>
+    <Transaction>2021/06/08 17:47:35.000.259,C:\POC\MQTTHomeManager\Unit1.pas=C:\POC\MQTTHomeManager\Unit2.pas</Transaction>
+    <Transaction>2021/06/08 17:47:50.000.126,C:\POC\MQTTHomeManager\UFrGenericRoom.pas=C:\POC\MQTTHomeManager\Unit1.pas</Transaction>
+    <Transaction>2021/06/08 17:47:50.000.126,C:\POC\MQTTHomeManager\UFrGenericRoom.fmx=C:\POC\MQTTHomeManager\Unit1.fmx</Transaction>
+    <Transaction>2021/06/12 17:37:00.000.962,C:\POC\MQTTHomeManager\HeaderFooterApplication.dproj=C:\POC\MQTTHomeManager\MQTTHomeManager.dproj</Transaction>
+    <Transaction>2021/06/12 17:37:19.000.498,C:\POC\MQTTHomeManager\HeaderFooterTemplate.fmx=C:\POC\MQTTHomeManager\UFormHomeManager.fmx</Transaction>
+    <Transaction>2021/06/12 17:37:19.000.498,C:\POC\MQTTHomeManager\HeaderFooterTemplate.pas=C:\POC\MQTTHomeManager\UFormHomeManager.pas</Transaction>
+  </Transactions>
+</BorlandProject>

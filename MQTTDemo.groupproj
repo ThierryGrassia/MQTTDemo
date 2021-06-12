@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{047731E7-19BB-49D4-9534-3EB3E673DF28}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="MQTTHomeClient\MQTTHomeClient.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="MQTTHomeManager\MQTTHomeManager.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="MQTTHomeClient">
+        <MSBuild Projects="MQTTHomeClient\MQTTHomeClient.dproj"/>
+    </Target>
+    <Target Name="MQTTHomeClient:Clean">
+        <MSBuild Projects="MQTTHomeClient\MQTTHomeClient.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="MQTTHomeClient:Make">
+        <MSBuild Projects="MQTTHomeClient\MQTTHomeClient.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="MQTTHomeManager">
+        <MSBuild Projects="MQTTHomeManager\MQTTHomeManager.dproj"/>
+    </Target>
+    <Target Name="MQTTHomeManager:Clean">
+        <MSBuild Projects="MQTTHomeManager\MQTTHomeManager.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="MQTTHomeManager:Make">
+        <MSBuild Projects="MQTTHomeManager\MQTTHomeManager.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="MQTTHomeClient;MQTTHomeManager"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="MQTTHomeClient:Clean;MQTTHomeManager:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="MQTTHomeClient:Make;MQTTHomeManager:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
